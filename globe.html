@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .globe {
+            left: 48%;
+            position: fixed;
+            width: 300vw;
+            animation: hero-anim-in 7s cubic-bezier(.075, .82, .165, 1) .5s both;
+            transform: translateX(-50%);
+            transform-origin: center center;
+        }
+
+        @keyframes hero-anim-in {
+            0% {
+                transform: translate3d(-50%, 200px, 0) scale(.8) rotate(-50deg);
+            }
+        }
+
+        .globe img {
+            animation: rotate 400s linear both infinite;
+        }
+
+        .globe img {
+            width: 100%;
+        }
+
+        img {
+            border: 0;
+        }
+
+        img {
+            display: inline-block;
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        @keyframes rotate {
+            100% {
+                -ms-transform: rotate(124deg);
+                transform: rotate(124deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="globe">
+            <img src="./globe.svg" alt="Globe with different cities">
+        </div>
+    </div>
+
+</body>
+
+</html>
